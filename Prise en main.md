@@ -1,3 +1,3 @@
-Prise en main du Reachy 
+#titre Prise en main du robot Reachy 
 
-Hardware 
+##titre 1.Matériel et branchement  
