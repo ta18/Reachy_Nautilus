@@ -15,7 +15,7 @@ Pour faire fonctionner votre robot, il vous faudra brancher l'alimentation qui v
 
 ![Dos du robot](https://user-images.githubusercontent.com/44843527/118484348-674a8580-b717-11eb-84ac-d00f595aed0a.jpg)
 
-Une fois branché, il vous faudra pousser les boutons ON/OFF à droite des prises. Ces boutons servent à allumer les moteurs et la Raspberry Pi du robot. 
+Une fois branché, il vous faudra pousser les boutons ON/OFF à droite des prises. Ces boutons servent à mettre sous tension les moteurs et la Raspberry Pi du robot. 
 
 ## 2. Connexion au robot 
 
@@ -46,10 +46,11 @@ Pour se connecter directement au robot il vous faudra :
 * un écran (HDMI)
 
 Il vous suffira de connecter tout ce matériel au dos du Reachy pour voir apparaitre l'interface graphique du Raspbian sur votre écran. 
-Lorsque tout est branché switcher les bouton ON/OFF des moteurs et de la Raspberry. Puis vous pourrez lancer jupyter notebook avec la commande *jupyter notebook* sur l'invite de commande. 
+Lorsque tout est branché switcher les bouton ON/OFF des moteurs et de la Raspberry. Puis vous pourrez lancer jupyter notebook avec la commande *jupyter notebook* sur l'invite de commande.  
+
 /!\ **La mise sous tension de la carte Raspberry Pi doit se faire après le branchement des différents élèments USB et HMDI.**
 
-Et voilà, à vos clavier !
+Et voilà, à vos claviers !
 
 ### Se connecter au serveur en wifi
 
