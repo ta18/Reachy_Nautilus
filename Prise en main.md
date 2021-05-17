@@ -13,7 +13,7 @@ Cette documentation vous guidera pour les étapes suivantes :
 
 Pour faire fonctionner votre robot, il vous faudra brancher l'alimentation qui vous est fournit au dos du robot (prise ronde) :
 
-![Dos du robot](images/reachy-bacl-fixation.png)
+![Dos du robot](https://github.com/ta18/Reachy_Nautilus/images/reachy-back-fixation.jpg?raw=true)
 
 Une fois branché, il vous faudra pousser les boutons ON/OFF à droite des prises. Ces boutons servent à allumer les moteurs et la Rasberry Pi du robot. 
 
