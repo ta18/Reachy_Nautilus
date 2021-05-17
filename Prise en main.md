@@ -17,3 +17,14 @@ Pour faire fonctionner votre robot, il vous faudra brancher l'alimentation qui v
 
 Une fois branché, il vous faudra pousser les boutons ON/OFF à droite des prises. Ces boutons servent à allumer les moteurs et la Rasberry Pi du robot. 
 
+## 2. Connexion au robot 
+
+Le robot est livré avec une Rasberry Pi qui permet de controller le robot. 
+Pour programmer votre robot il vous faut : 
+* un ordinateur (sous windows, linux ou Mac)
+* la suite Anaconda installée avec Python 3.7 minimum ( à télécharger [ici](https://www.anaconda.com/products/individual))
+
+Pour commencer il vous faudra ouvrir l'invite de commande et installer l'API Reachy :
+
+
+
