@@ -1,6 +1,6 @@
 # Prise en main du robot Reachy 
 
-** /!\ ATTENTION : cette documentation a était faite pour Reachy 2019 /!\ **
+/!\ **ATTENTION : cette documentation a était faite pour Reachy 2019** /!\  
 
 Reachy est une plate-forme humanoïde open-source expressive programmable avec Python. Avec Reachy vous pourrez concevoir de multiple application autant dans la reconnaissance d'images que dans la manipulation d'objets. 
 
@@ -70,7 +70,7 @@ Et voilà vous êtes connecté a votre Reachy !
 
 Une fois connecté a votre robot, vous pouvez commencer a communiquer avec Reachy. 
 Lorsque que vous vous connectez au Reachy vous tomber sur l'arborescence du jupyter notebook. Ici vous pouvez créer un nouveau programme ou utiliser un déjà écrit. 
-Dans le dossier *dev/reachy/software/notebooks* vous trouverez des programmes permettant de faire bouger les bras ou la tête. 
+Dans le dossier *dev/reachy/software/notebooks* vous trouverez des programmes permettant de faire bouger les bras ou la tête. Vous pouvez également utiliser les notebooks présent ici [Notebook](https://github.com/ta18/Reachy_Nautilus/tree/main/notebook) qui sont créer spécialement pour cette notice. 
 
 Regardons en détail : 
 
