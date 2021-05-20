@@ -53,6 +53,9 @@ Pour pouvoir vous connecter à votre Reachy il vous faudra vous connecter au moi
 4. Se connecter au hotspot Reachy-AP 
 5. Coller le lien copier auparavant dans votre navigateur sur votre ordinateur.  
 
+Pour connaitre l'adresse IP d'un appareil : 
+* sous windows : clique droit sur le réseaux/proprietes/IpV4 
+* sous linux : 
 Si vous souhaitez optimiser cette connexion vous pouvez changer le token (le mot de passe) en tapant sur l'invite de commande du Reachy la commande *jupyter notebook password*. Cette manip permet d'éviter de copier le lien donner par l'invite plus haut qui est relativement long et complexe.  
 Maintenant il vous suffira juste d'entrer l'adresse *http:/adresseIpDuReachy:8888/* puis rentrer le mot de passe que vous avez choisit. 
 
