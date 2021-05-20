@@ -49,7 +49,7 @@ Et voilà, à vos claviers !
 Pour pouvoir vous connecter à votre Reachy il vous faudra vous connecter au moins une fois directement (comme expliqué a la section preécédente) : 
 1. Se connecter directement au robot 
 2. Taper la commande *jupyter notebook --ip=0.0.0.0* dans l'invite de commande du Reachy 
-3. Sur l'invite de commande il y aura alors plusieurs liens, il vous faudra copier le lien du type *http:/192.164.4.1:8888/=token?...*. 
+3. Sur l'invite de commande il y aura alors plusieurs liens, il vous faudra copier le lien du type *http:/adresseIpDuReachy:8888/=token?...*. 
 4. Se connecter au hotspot Reachy-AP 
 5. Coller le lien copier auparavant dans votre navigateur sur votre ordinateur.  
 
