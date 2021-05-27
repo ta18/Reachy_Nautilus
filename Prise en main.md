@@ -40,7 +40,7 @@ Pour se connecter directement au robot il vous faudra :
 Il vous suffira de connecter tout ce matériel au dos du Reachy pour voir apparaitre l'interface graphique du Raspbian sur votre écran. 
 Lorsque tout est branché switcher les bouton ON/OFF des moteurs et de la Raspberry. Puis vous pourrez lancer jupyter notebook avec la commande *jupyter notebook* sur l'invite de commande.  
 
-/!\ **La mise sous tension de la carte Raspberry Pi doit se faire après le branchement des différents élèments USB et HMDI.**
+⚠️ **La mise sous tension de la carte Raspberry Pi doit se faire après le branchement des différents élèments USB et HMDI.**
 
 Et voilà, à vos claviers !
 
@@ -194,12 +194,6 @@ player = TrajectoryPlayer(reachy, recorder.trajectories)
 player.play(wait=True, fade_in_duration=3)
 ```
 
-## 3.5 Création de trajectoire 
-
-Pour effectuer une trajectoire 3 options : 
-* trajectoire point par point 
-* trajectoire aléatoire 
-* trajectoire qui suit une courbe 
 
 
 
