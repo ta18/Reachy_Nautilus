@@ -79,10 +79,12 @@ Une fois connecté a votre robot, vous pouvez commencer a communiquer avec Reach
 Lorsque que vous vous connectez au Reachy vous tomber sur l'arborescence du jupyter notebook. Ici vous pouvez créer un nouveau programme ou utiliser un déjà écrit. 
 Dans le dossier *dev/reachy/software/notebooks* vous trouverez des programmes permettant de faire bouger les bras ou la tête. Vous pouvez également utiliser les notebooks présent ici [Notebook](https://github.com/ta18/Reachy_Nautilus/tree/main/notebook) qui sont créer spécialement pour cette notice. 
 
+## 3.1 Instancier l'objet Reachy 
+
 Regardons en détail le code :
 
 `from reachy import Reachy, parts`
-On renseigne l'API utilisée, ici c'est l'API Reachy.
+On import l'objet reachy de l'API Reachy. 
 
 On spécifie les pièces du robot sur lesquels on va travailler :
 ```
@@ -91,39 +93,37 @@ reachy = Reachy(
     head=parts.Head(io='/dev/ttyUSB*'), 
     )
 ```
-
-Ici, nous spécifions que nous voulons ajouter une partie bras droit et une partie tête. Ces pièces doivent être trouvées sur des ports séries USB de type «/ dev / ttyUSB \*». C'est le nom standard du port série sur un système Linux (en effet la raspberry présente dans le robot est sous Linux).
-Pour le bras, nous précisons quels types de main y est attachée. Dans notre cas, nous le définissons sur «force_gripper» (main en forme de pince).
+Ici, nous spécifions que nous voulons ajouter une partie bras droit et une partie tête. Ces pièces doivent être trouvées sur des ports séries USB de type «/ dev / ttyUSB \*». 
+Pour le bras, nous définissons la main comme «force_gripper» (main en forme de pince).
 
 On peut, si on le souhaite, spécifier une seule pièce par exemple la tête :
 `reachy = Reachy'( head=parts.Head(io='/dev/ttyUSB*), )`
 
-Si tu ne vois aucune erreur au lancement de ces lignes de code, bonne nouvelle, tu es maintenant connecté au Robot et toutes la pièce tête a bien était trouvée !
+Si tu ne vois aucune erreur au lancement de ces lignes de code, bonne nouvelle, tu es maintenant connecté au Robot et tous les systèmes ont bien été trouvés !
 
-## Compliant ou pas ?
+## 3.2 Compliant ou pas ?
 
 Les servomoteurs utilisés dans le bras de Reachy ont deux modes de fonctionnement:
 
-- **compliant** : les moteurs sont doux et peuvent être tournés librement à la main. Il ne peut pas être contrôlé.
-- **non compliant** : les moteurs sont durs et ne peuvent pas être déplacés à la main. Il peut être contrôlé en définissant une nouvelle position cible.
+- **compliant** : les servomoteurs sont libres et peuvent être tournés à la main. Ils ne peuvent pas être contrôlés.
+- **non compliant** : les servomoteurs sont actifs et résistent au déplacement à la main. Ils peuvent être contrôlés en définissant une nouvelle position cible.
 
-Pour que Reachy conserve sa position et te permette de contrôler ses moteurs, tu dois les rendre non compliant. Pour ce faire, tu peux utiliser la propriété compliant : 
+Pour que Reachy conserve sa position et te permette de contrôler ses moteurs, tu dois les rendre non compliant en utilisant l'attribut `compliant` : 
 
-Par exemple, pour rendre le bras non compliant, exécute le code suivant:
+Rendre le bras non-compliant : 
 `reachy.right_arm.compliant = False`
-Maintenant, le bras doit être dur, tu ne peux plus le bouger à la main.
+Maintenant, le bras doit résister, tu ne peux plus le bouger à la main.
 
-Pour le remettre en compliant, exécute simplement:
+Rendre le bras compliant : 
 `reachy.right_arm.compliant = True`
 
 ⚠️ **Attention** : il ne faut surtout pas forcer les moteurs lorsque le robot est en mode "non compliant" cela pourrait endommager les moteurs. 
 
-## Bouger le bras ou la tête
+
+## 3.3 Les méthodes pour faire bouger les moteurs :
 
 Pour bouger des parties du robot, tu va utiliser les méthodes des classes Head() et Right_Arm() :
 Documentation des classes et méthodes : [ici](https://pollen-robotics.github.io/reachy-2019/autoapi/reachy/index.html#)
-
-#### Les méthodes sur les moteurs :
 
 ### goto(goal_position, duration, wait)
 
@@ -149,33 +149,32 @@ On peut utiliser cette méthode pour une seule partie du bras. Par exemple, pour
 
 ### goto(thetas, duration, wait)
 
-Pour la tête on utilise également la méthode goto() avec thetas la position cible en dégrés :
+Pour la tête on utilise également la méthode goto() avec thetas les positions cibles des 3 parties en dégrés :
 `reachy.head.neck.goto(thetas=(-10,-10,-10), duration=3, wait=True)`
-
-**Attention à la durée d'atteinte des position : ne pas mettre des durée trop courte.**
-
-### goal_position(soi même)
-
-Ici on utilise une méthode inférieur à la méthode goto() pour contrôler le moteur.
-Tu dois être prudent en utilisant cette méthode car le moteur essaiera d'atteindre cette nouvelle position d'objectif aussi vite que possible. Et c'est vraiment rapide (jusqu'à ~ 600-700 degrés par seconde)! Une solution de contournement consiste également à utiliser la propriété moving_speed pour définir la vitesse maximale que le moteur peut atteindre.
-
-```
-reachy.right_arm.elbow_pitch.moving_speed = 50 # in degrees per sec 
-reachy.right_arm.elbow_pitch.goal_position = 110 # in degrees
-```
-
-#### Les méthodes sur la tête :
 
 ### look_at(x, y, z, duration, wait)
 
-Cette méthode permet de faire en sorte que la tête regarde un point 3D dans l'espace :
+Cette méthode permet de bouger la tête en fonction d'un point 3D dans l'espace (Nemo regarde ce point 3D) :
 `reachy.head.look_at(1, 0, 0, duration=1, wait=True)`
 
-### Enregistrer une trajectoire et la reproduire
+⚠️ **Attention à la durée d'atteinte des position : ne pas mettre des durée trop courte.**
 
-Jusqu'à présent, nous vous avons fait bouger le robot en utilisant goto et une position prédéfinie. Cela fonctionne bien pour un mouvement simple mais parfois, pour des mouvements complexes, il semble plus agréable de pouvoir enregistrer un mouvement et l'enregistrer.
+### goal_position
 
-Avec cette approche, tu vas effectuer des trajectoires entières avec Reachy en le déplaçant à la main (en utilisant le mode compliant) et enregistrer les positions des différents moteurs. Selon ce que vous voulez, vous pouvez enregistrer un seul moteur ou plusieurs à la fois. Un objet TrajectoryRecorder va rendre ce processus vraiment simple.
+Pour faire bouger les antennes on utilise une méthode inférieur à la méthode goto() pour contrôler le moteur. Tu dois être prudent en utilisant cette méthode car le moteur essaiera d'atteindre cette nouvelle position d'objectif aussi vite que possible. Une solution de contournement consiste également à utiliser la propriété moving_speed pour définir la vitesse maximale que le moteur peut atteindre.
+
+```
+for m in reachy.head.motors:
+    m.moving_speed = 50  # en degres par seconde
+for m in reachy.head.motors:
+    m.goal_position = 0
+```
+
+## 3.4 Enregistrer une trajectoire et la reproduire
+
+Jusqu'à présent, nous vous avons fait bouger le robot en utilisant goto et une position cible. Cela fonctionne bien pour un mouvement simple mais parfois, pour des mouvements complexes, il semble plus agréable de pouvoir enregistrer un mouvement et l'enregistrer.
+
+Avec cette approche, tu vas effectuer des trajectoires entières avec Reachy en le déplaçant à la main (en utilisant le mode compliant) et enregistrer les positions des différents moteurs. Selon ce que tu veux, tu peux enregistrer un seul moteur ou plusieurs à la fois. Un objet TrajectoryRecorder va rendre ce processus vraiment simple.
 
 Pour enregistrer un mouvement sur le bras droit :
 `from reachy.trajectory import TrajectoryRecorder, TrajectoryPlayer`
@@ -194,6 +193,14 @@ Ensuite pour rejouer la trajectoire :
 player = TrajectoryPlayer(reachy, recorder.trajectories) 
 player.play(wait=True, fade_in_duration=3)
 ```
+
+## 3.5 Création de trajectoire 
+
+Pour effectuer une trajectoire 3 options : 
+* trajectoire point par point 
+* trajectoire aléatoire 
+* trajectoire qui suit une courbe 
+
 
 
 
