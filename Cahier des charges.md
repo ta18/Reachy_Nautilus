@@ -51,7 +51,7 @@ En nous inspirant de ces projets, je propose de créer une capsule pédagogique 
 Un jeu mémoriel à l'intention des enfants avec autisme qui leur permettrait de mémoriser un certain nombre d'émotions.   
 Déroulement du jeu mémoriel :   
 1. Le robot produit des émotions par des expressions faciales et corporelles (posture/geste) et des expressions vocales. On peut commencer par 3/4 émotions. 
-2. L'enfant doit retenir les émotions et le nom de l'émotion annoncée. 
+2. L'enfant doit retenir les émotions et le nom de l'émotion annoncée (on peut aussi associer l'émotion à une couleur mais il faut vérifier si ca ne biaise pas l'apprentissage + comment annoncer l'émotions ?). 
 3. Le robot va refaire les émotions dans un ordre aléatoire et l'enfant devra les reconnaitre. 
 
 Partie optionnelle a étudié :   
