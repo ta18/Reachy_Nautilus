@@ -9,14 +9,14 @@ Le concept de capsules pédagogiques (initialement nugget) vient de l’Institut
 
 Cette capsule porte sur le jeu du chifoumi (pierre-feuille-ciseaux) qui se joue généralement en duel même s’il est possible de s’affronter à plusieurs. Pour commencer les joueurs comptent jusqu’à trois en mettant la main dans le dos. Une fois à trois les joueurs révèlent leur main (pierre, feuille ou ciseaux) en même temps. La plus forte des formes l’emporte et le joueur marque le point gagnant. Si les deux joueurs utilisent la même forme c’est un match nul.
 
-La pierre : est représentée par un poing fermé.
-La feuille : est représentée par une main à plat, la paume en direction du sol.
-Les ciseaux : sont représentés par deux doigts formant un V.
-
-Force de chaque forme au Pierre – Feuille – Ciseaux :
-La pierre écrase les ciseaux et gagne.
-La feuille enveloppe la pierre et gagne.
-Les ciseaux découpent la feuille et gagnent.
+La pierre : est représentée par un poing fermé.  
+La feuille : est représentée par une main à plat, la paume en direction du sol.  
+Les ciseaux : sont représentés par deux doigts formant un V.  
+  
+Force de chaque forme au Pierre – Feuille – Ciseaux :  
+* La pierre écrase les ciseaux et gagne.  
+* La feuille enveloppe la pierre et gagne.  
+* Les ciseaux découpent la feuille et gagnent.  
 
 Le but de cette capsule est de pouvoir jouer au chifoumi contre le robot. Pour cela nous allons entrer un réseau de neurones afin de reconnaitre les 3 formes de main. Ensuite une phase de programmation du robot devra être faite : mouvement du bras et de la pince et travaille sur les stratégies du chifoumi (si mon adverse a fait pierre avant alors je vais faire ?). 
 
@@ -29,9 +29,9 @@ Cette thématique "main" pourrait faire partie du projet : la capsule pourrait c
 
 Les personnes atteintes d’autisme voient, entendent et perçoivent le monde de façon différente des autres, ce qui influence la manière dont ils interagissent avec eux. Cela rend les activités axées sur la communication assez difficiles pour les enfants atteints de troubles du spectre autistique (TSA). 
 
-J'ai effectué plusieurs recherches sur internet au sujet des applications robotiques ou web à l'intention des enfants avec autisme : 
-JEMIme est un projet de jeu éducatif sous forme de serious Game.  
-Le projet JEMImE vise à concevoir de nouveaux algorithmes de reconnaissance multimodale d’émotions pour évaluer la qualité des émotions produites par des enfants. L’objectif est d’aider les enfants avec autisme à apprendre à imiter et à mimer des émotions faciales et vocales afin d’exprimer l’expression appropriée à un contexte donné.
+J'ai effectué plusieurs recherches sur internet au sujet des applications robotiques ou web à l'intention des enfants avec autisme :   
+JEMIme est un projet de jeu éducatif sous forme de serious Game.    
+Le projet JEMImE vise à concevoir de nouveaux algorithmes de reconnaissance multimodale d’émotions pour évaluer la qualité des émotions produites par des enfants. L’objectif est d’aider les enfants avec autisme à apprendre à imiter et à mimer des émotions faciales et vocales afin d’exprimer l’expression appropriée à un contexte donné.  
 Ils ont centré le jeu sur 3 émotions : la colère, la tristesse et la joie.
 
 L’équipe PIRoS a également créé un dispositif ludique et engageant pour stimuler les enfants en leur demandant d’imiter les postures et les gestes du robot. Après quelques minutes, les rôles s’inversent et le robot peut à son tour imiter, grâce à l’intelligence artificielle, les mouvements réalisés par l’enfant.
@@ -46,9 +46,9 @@ documentation :
 
 ### 2.2 Proposition de capsule 
 
-Ici nous aimerions profiter du coter très émotionnel de Reachy qui provient surement du mouvement de la tête et des antennes.
-En nous inspirant de ces projets, je propose de créer une capsule pédagogique de mise en situation : 
-Un jeu mémoriel à l'intention des enfants avec autisme qui leur permettrait de mémoriser un certain nombre d'émotions. 
+Ici nous aimerions profiter du coter très émotionnel de Reachy qui provient surement du mouvement de la tête et des antennes.  
+En nous inspirant de ces projets, je propose de créer une capsule pédagogique de mise en situation :   
+Un jeu mémoriel à l'intention des enfants avec autisme qui leur permettrait de mémoriser un certain nombre d'émotions.   
 Déroulement du jeu mémoriel :   
 1. Le robot produit des émotions par des expressions faciales et corporelles (posture/geste) et des expressions vocales. On peut commencer par 3/4 émotions. 
 2. L'enfant doit retenir les émotions et le nom de l'émotion annoncée. 
