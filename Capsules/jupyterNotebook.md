@@ -8,8 +8,10 @@ menu:
 
 ---
 
-### **<p style="text-align: right;">Capsule info ℹ️</p>**
-### <p style="text-align: right;">Durée : 10min</p>
+| Classe de capsule  | &emsp;durée recommandée |
+|:-------------------|:------------------|
+| Info  &emsp;  ℹ️  |&emsp; 10 min      |
+
 
 ## 🎒 Prérequis
 - Lycée et +
@@ -36,12 +38,12 @@ Si tu veux utilise Jupyter en local sur ton ordinateur tu dois :
 ## 1. Ouvrir Jupyter Notebook
 
 Pour ouvrir Jupyter Notebook deux options : 
-* Ouvrir Anaconda Navigator --> launch Jupyter 
+* Ouvrir Anaconda Navigator > *launch Jupyter*
 ![anaconda](img/anaconda.png)
 * Ouvrir via une fenêtre de commande et taper `jupyter notebook`
 
 ## 2. Créer un notebook 
-Une fenêtre Jupyter va s'ourvir dans votre navigateur 
+Une fenêtre Jupyter va s'ourvir dans votre navigateur   
 ![main](img/jupyterMain.png)
 
 Pour créer un nouveau notebook clique sur *Nouveau* > *Python 3*.
