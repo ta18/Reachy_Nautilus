@@ -1,9 +1,9 @@
-# Cahier des charges des capsules
+# Cahier des charges des capsules pédagogiques
 
 ## Introduction 
 
-Ce projet consiste à mettre en route le robot Reachy de chez Pollen Robotics et à créer des séquences pédagogiques à l'intention des élèves de l'ENSAM mais également open source.
-Le concept de capsules pédagogiques (initialement nugget) vient de l’Institut européen d'innovation et de technologie (EIT). Ce sont des petits objets d’apprentissage qui sont reliés entre eux via différents didacticiels qui permettent d’apprendre et de vérifier des compétences. Ces didacticiels sont appelés Chemin d’apprentissage (Learning Path). Le but de ce projet a donc été de créer différentes capsules, afin de pouvoir proposer des chemins d’apprentissage adaptés à chaque formation. 
+Ce projet consiste à mettre en route le robot Reachy conçu et distribué par Pollen Robotics et à créer des séquences pédagogiques à l'intention des élèves de l'ENSAM publiées sous licence open source.
+Le concept de capsules pédagogiques (initialement _nugget_) vient de l’Institut Européen d'innovation et de technologie (EIT). Ce sont des petits objets d’apprentissage qui sont reliés entre eux via différents didacticiels qui permettent d’acquérir des compétences et de vérifie ses acquis. Ces didacticiels sont appelés Chemin d’apprentissage (_Learning Path_). Le but de ce projet est de créer différentes capsules, afin de pouvoir proposer des chemins d’apprentissage adaptés aux formations de l'ENSAM (Bachelor, Ingénieur, Ingénieur en alternace) et éventuellement à un public plus large par le biais d'Internet. 
 
 ## 1. Capsule chifoumi 
 
@@ -18,9 +18,9 @@ Force de chaque forme au Pierre – Feuille – Ciseaux :
 * La feuille enveloppe la pierre et gagne.  
 * Les ciseaux découpent la feuille et gagnent.  
 
-Le but de cette capsule est de pouvoir jouer au chifoumi contre le robot. Pour cela nous allons entrer un réseau de neurones afin de reconnaitre les 3 formes de main. Ensuite une phase de programmation du robot devra être faite : mouvement du bras et de la pince et travaille sur les stratégies du chifoumi (ex : si mon adverse a fait pierre avant alors je vais faire ?). Il existe des statégies pour ce jeu notamment sur l'enchainement des forme (ex : Si votre adversaire joue 2 fois le même signe à la suite, le prochain est sans aucun doute un signe différent. Ripostez donc avec un signe approprié vous avez 1 chance sur 2 de remporter la main.) 
+Le but de cette capsule est de pouvoir jouer au chifoumi contre le robot. Pour cela nous allons entraîner un réseau de neurones afin de reconnaitre les 3 formes de main humaine. Ensuite une phase de programmation du robot devra être faite : mouvement du bras et de la pince et travaille sur les stratégies du chifoumi (ex : si mon adverse a fait pierre avant alors je vais faire ?). Il existe des statégies pour ce jeu notamment sur l'enchainement des forme (ex : Si votre adversaire joue 2 fois le même signe à la suite, le prochain est sans aucun doute un signe différent. Ripostez donc avec un signe approprié vous avez 1 chance sur 2 de remporter la main.) 
 
-Le reachy dont nous disposons est composé de la main en pince, il faudra donc réfléchir aux 3 formes de mains qui ne sont pas les mêmes que sur une main humanoïde. 
+Le robot reachy dont nous disposons est équipé d'une main de type pince, il faudra donc réfléchir aux 3 formes de mains qui ne sont pas les mêmes que sur une main humanoïde. 
 Cette thématique "main" pourrait faire partie du projet : la capsule pourrait commencer par une partie hardware où les élèves auraient pour consigne de concevoir une main capable d'effectuer les formes pierre, feuille et ciseaux. 
 
 ## 2. Capsule Reachy expressif (jeu mémoriel)
@@ -46,7 +46,7 @@ documentation :
 
 ### 2.2 Proposition de capsule 
 
-Ici nous aimerions profiter du coter très émotionnel de Reachy qui provient surement du mouvement de la tête et des antennes.  
+Ici nous aimerions profiter du côté très émotionnel de Reachy qui provient principalement du mouvement de la tête et des antennes.  
 En nous inspirant de ces projets, je propose de créer une capsule pédagogique de mise en situation :   
 Un jeu mémoriel à l'intention des enfants avec autisme qui leur permettrait de mémoriser un certain nombre d'émotions.   
 Déroulement du jeu mémoriel :   
@@ -54,13 +54,13 @@ Déroulement du jeu mémoriel :
 2. L'enfant doit retenir les émotions et le nom de l'émotion annoncée (on peut aussi associer l'émotion à une couleur mais il faut vérifier si ca ne biaise pas l'apprentissage + comment annoncer l'émotions ?). 
 3. Le robot va refaire les émotions dans un ordre aléatoire et l'enfant devra les reconnaitre. 
 
-Partie optionnelle a étudié :   
+Partie optionnelle à étudir :   
 L'apprentissage du robot de nouvelles émotions qu'il ne connait pas déjà. 
 
 ## 3. Capsule Reachy kiné 
 
 Le projet KERAAL, porté par IMT Atlantique, travaille à la conception d’un robot humanoïde capable d’accompagner les patients atteints de lombalgie lors des exercices de rééducation à domicile. Grâce à des algorithmes d’apprentissage supervisé, le robot peut montrer au patient le bon mouvement à effectuer et corriger ses erreurs en temps réel.
-En 2014, les chercheurs avaient commencé des tests avec le robot Nao, développé par SoftBank Robotics. Aujourd'hui l'expérience est faite avec Poppy le grand frère de Reachy. 
+En 2014, les chercheurs avaient commencé des tests avec le robot Nao, développé par SoftBank Robotics. Aujourd'hui l'expérience est faite avec Poppy le petit frère de Reachy. 
 Bien que les sujets aient beaucoup d’appréhension à l’idée de travailler avec un robot, Poppy a été perçu de manière très positive. Le robot a également motivé les patients à effectuer leurs exercices. 
 
 Documentation : [projet KERAAL](https://imtech.wp.imt.fr/2018/01/24/robot-reeducation/)   
