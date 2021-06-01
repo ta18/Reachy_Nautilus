@@ -9,9 +9,9 @@ Le concept de capsules pédagogiques (initialement nugget) vient de l’Institut
 
 Cette capsule porte sur le jeu du chifoumi (pierre-feuille-ciseaux) qui se joue généralement en duel même s’il est possible de s’affronter à plusieurs. Pour commencer les joueurs comptent jusqu’à trois en mettant la main dans le dos. Une fois à trois les joueurs révèlent leur main (pierre, feuille ou ciseaux) en même temps. La plus forte des formes l’emporte et le joueur marque le point gagnant. Si les deux joueurs utilisent la même forme c’est un match nul.
 
-La pierre : est représentée par un poing fermé.  
-La feuille : est représentée par une main à plat, la paume en direction du sol.  
-Les ciseaux : sont représentés par deux doigts formant un V.  
+**La pierre** : est représentée par un poing fermé.  
+**La feuille** : est représentée par une main à plat, la paume en direction du sol.  
+**Les ciseaux** : sont représentés par deux doigts formant un V.  
   
 Force de chaque forme au Pierre – Feuille – Ciseaux :  
 * La pierre écrase les ciseaux et gagne.  
