@@ -7,8 +7,10 @@ menu:
     parent: "capsules"
 ---
 
-### **<p style="text-align: right;">Capsule info ℹ️</p>**
-### <p style="text-align: right;">Durée : 10min</p>
+| Classe de capsule  | &emsp;durée recommandée |
+|:-------------------|:------------------|
+| Info  &emsp;  ℹ️  |&emsp; 10 min      |
+
 
 ## 🎒 Prérequis
 
@@ -40,20 +42,22 @@ Pour coder en Python vous pouvez utiliser de nombreux IDE. Voir [capsule prise e
 Chaque information que vous souhaitez réutiliser plus tard s’appelle une variable. Nous pouvons voir une variable comme une étiquette que vous colleriez sur un objet pour vous souvenir de son nom. 
 Pour définir une variable, nous allons taper son nom, un signe égal puis sa valeur. Par exemple :  
    
-```
-prenom = "nemo"
-prenom
-> nemo
+```python 
+>>> prenom="reachy"
+>>> prenom
+'reachy'
 ```  
 Pour afficher le contenu d'une variable il suffit d'entrer le nom de la variable ou d'effectuer un print().  
 
 Si tu souhaites redéfinir cette variable il suffit de réécrire :   
-`prenom = "dory"`
+```python 
+prenom = "dory"
+```
 
 **Les différentes nature de variables :** 
-* nombre (integer ou float) : les integer désigne les nombres entiers, et les float les nombres décimaux.  
-* string : il s'agit d'une chaine de caractères (texte, nombre ...etc) qui doit être encadrée par des guillemets "". \n pour un retour à la ligne.    
-* boolean : il s'agit d'une information vraie ou fausse (true ou false).   
+* **nombre** (integer ou float) : les integer désigne les nombres entiers, et les float les nombres décimaux.  
+* **string** : il s'agit d'une chaine de caractères (texte, nombre ...etc) qui doit être encadrée par des guillemets "". \n pour un retour à la ligne.    
+* **boolean** : il s'agit d'une information vraie ou fausse (true ou false).   
 
 ## 2. Le calcul 
 
@@ -64,15 +68,15 @@ Les opérations de bases sont :
 * / : la division 
 * ** : la puissance 
 * // : la division entière
-* % : le reste de la division 
+* % : le reste de la division  
 
 Exemple :  
-```
-a = 2
-b = 3 
-c = a+b
-c
->5 
+```python 
+>>> a = 2
+>>> b = 3
+>>> c = a+b
+>>> c
+5 
 ```
 ## 3. Les boucles if 
 
@@ -80,12 +84,12 @@ Les conditions ont le même sens en informatique que dans le langage courant, el
 
 Les différentes condtions possibles sont : 
 * si *n* est égal à 0 : `if(n==0)`  
-* si *n* est supérieur à 0 :`if(n>0)` 
+* si *n* est supérieur à 0 : `if(n>0)` 
 * si *n* est différent de 10 : `if(n!=10)`
 * si *n* est compris entre 0 et 10 : `if(n>0) and if(n<0)`  
 
-Exemples : 
-```
+Exemple : 
+```python 
 n = input("Entrer un nombre : ")
 if n<0:
 print("Le nombre est négatif")
@@ -100,27 +104,28 @@ print("Le nombre est positif")
 
 Une liste est une collection d’éléments séparés par des virgules, l’ensemble étant enfermé dans des
 crochets. Dans une liste on peut stocker des chiffres, des chaines de caractères, des boléens ... etc. 
+```python 
+robotique = ['informatique', 'mécatronique', 'IA']
+```
 
-`robotique = ['informatique', 'mécatronique', 'IA']`
+**Méthodes utiles :**  
 
-Pour manipuler les listes plusieurs choses sont utiles :  
+Pour afficher la valeur du premier élèment de la liste : 
+```python 
+>>> print(robotique[0])
+informatique
 ```
-print(robotique[0])
->informatique
+Pour connaitre la taille de la liste : 
+```python
+>>> print(len(robotique))
+3
 ```
-permet d'afficher la valeur du premier élèment de la liste 
+Pour ajouter un élèment à la liste : 
+```python 
+>>> robotique.append('math')
+>>> print(robotique)
+['informatique', 'mécatronique', 'IA', 'math']
 ```
-print(len(robotique))
->3
-```
-permet de connaitre la taille de la liste 
-
-```
-robotique.append("math)
->print(robotique)
->['informatique', 'mécatronique', 'IA', 'math']
-```
-permet d'ajouter un élèment à la liste 
 
 D'autres méthodes de l'objet liste : 
 * **sort()** : trie les élèments dans l'ordre croissant  
@@ -129,35 +134,49 @@ D'autres méthodes de l'objet liste :
 * **remove()** : enlève un élèment 
 
 l'instruction range() créer une liste pré-remplie de n élèments : 
-```
-for i in range(6):
+```python
+>>> for i in range(6):
     print(i)
->1, 2, 3, 4, 5
+0
+1
+2
+3
+4
+5
 ```
 On peut également définir où commencer, ou finir et le pas avec range(start, stop, step) : 
-```
-for i in range(1,10,2):
+```python
+>>> for i in range(1,10,2):
     print(i)
->1, 3, 5, 7, 9
+1
+3
+5
+7
+9
 ```
 
-Slicing :
+**Slicing :**
 
-```
-nombres = [2, 45, -7, 19, 183]
-print(nombres[1:3]) 
->[45, -7]
-print(nombres[2:3])
->[-7]
-print(nombres[2:])
->[-7, 19, 183]
-print(nombres[:2])
->[2, 45]
+```python 
+>>> nombres = [2, 45, -7, 19, 183]
+>>> print(nombres[1:3]) 
+[45, -7]
+>>> print(nombres[2:3])
+[-7]
+>>> print(nombres[2:])
+[-7, 19, 183]
+>>> print(nombres[:2])
+[2, 45]
 ```
 
 ### Tupples
 
 Les tuples servent à créer des structures dont le nombre d'éléments ne bouge pas (on dit qu'ils sont immuables).
 Elles commencent par une parenthèse ouvrante, un ensemble d’objets séparés par des virgules et une parenthèse fermante.
+```python 
+courses = ('banane', 'oeufs', 'pain', 'sauce')
+```
 
-`courses = ('banane', 'oeufs', 'pain', 'sauce')`
+
+
+
