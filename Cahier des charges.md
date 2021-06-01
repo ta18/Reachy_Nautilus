@@ -63,7 +63,7 @@ Le projet KERAAL, porté par IMT Atlantique, travaille à la conception d’un r
 En 2014, les chercheurs avaient commencé des tests avec le robot Nao, développé par SoftBank Robotics. Aujourd'hui l'expérience est faite avec Poppy le grand frère de Reachy. 
 Bien que les sujets avaient beaucoup d’appréhension à l’idée de travailler avec un robot, Poppy a été perçu de manière très positive. Le robot a également motivé les patients à effectuer leurs exercices. 
 
-[projet KERAAL](https://imtech.wp.imt.fr/2018/01/24/robot-reeducation/)   
+documentation : [projet KERAAL](https://imtech.wp.imt.fr/2018/01/24/robot-reeducation/)   
 
 En nous inspirant de ce projets, je propose de créer une capsule pédagogique de mise en situation :   
 Un réseaux de neurones pré-entrainé permettra de détecter les poses et mouvements des patients en séances, si le robot connait ces mouvements il analysera s'ils sont bien executés. S'ils ne le sont pas il montrera comment les effectuer bien. 
