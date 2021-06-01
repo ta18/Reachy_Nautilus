@@ -18,7 +18,7 @@ Force de chaque forme au Pierre – Feuille – Ciseaux :
 * La feuille enveloppe la pierre et gagne.  
 * Les ciseaux découpent la feuille et gagnent.  
 
-Le but de cette capsule est de pouvoir jouer au chifoumi contre le robot. Pour cela nous allons entrer un réseau de neurones afin de reconnaitre les 3 formes de main. Ensuite une phase de programmation du robot devra être faite : mouvement du bras et de la pince et travaille sur les stratégies du chifoumi (si mon adverse a fait pierre avant alors je vais faire ?). 
+Le but de cette capsule est de pouvoir jouer au chifoumi contre le robot. Pour cela nous allons entrer un réseau de neurones afin de reconnaitre les 3 formes de main. Ensuite une phase de programmation du robot devra être faite : mouvement du bras et de la pince et travaille sur les stratégies du chifoumi (ex : si mon adverse a fait pierre avant alors je vais faire ?). Il existe des statégies pour ce jeu notamment sur l'enchainement des forme (ex : Si votre adversaire joue 2 fois le même signe à la suite, le prochain est sans aucun doute un signe différent. Ripostez donc avec un signe approprié vous avez 1 chance sur 2 de remporter la main.) 
 
 Le reachy dont nous disposons est composé de la main en pince, il faudra donc réfléchir aux 3 formes de mains qui ne sont pas les mêmes que sur une main humanoïde. 
 Cette thématique "main" pourrait faire partie du projet : la capsule pourrait commencer par une partie hardware où les élèves auraient pour consigne de concevoir une main capable d'effectuer les formes pierre, feuille et ciseaux. 
@@ -61,12 +61,12 @@ L'apprentissage du robot de nouvelles émotions qu'il ne connait pas déjà.
 
 Le projet KERAAL, porté par IMT Atlantique, travaille à la conception d’un robot humanoïde capable d’accompagner les patients atteints de lombalgie lors des exercices de rééducation à domicile. Grâce à des algorithmes d’apprentissage supervisé, le robot peut montrer au patient le bon mouvement à effectuer et corriger ses erreurs en temps réel.
 En 2014, les chercheurs avaient commencé des tests avec le robot Nao, développé par SoftBank Robotics. Aujourd'hui l'expérience est faite avec Poppy le grand frère de Reachy. 
-Bien que les sujets avaient beaucoup d’appréhension à l’idée de travailler avec un robot, Poppy a été perçu de manière très positive. Le robot a également motivé les patients à effectuer leurs exercices. 
+Bien que les sujets aient beaucoup d’appréhension à l’idée de travailler avec un robot, Poppy a été perçu de manière très positive. Le robot a également motivé les patients à effectuer leurs exercices. 
 
-documentation : [projet KERAAL](https://imtech.wp.imt.fr/2018/01/24/robot-reeducation/)   
+Documentation : [projet KERAAL](https://imtech.wp.imt.fr/2018/01/24/robot-reeducation/)   
 
-En nous inspirant de ce projets, je propose de créer une capsule pédagogique de mise en situation :   
-Un réseaux de neurones pré-entrainé permettra de détecter les poses et mouvements des patients en séances, si le robot connait ces mouvements il analysera s'ils sont bien executés. S'ils ne le sont pas il montrera comment les effectuer bien. 
+En nous inspirant de ce projet, je propose de créer une capsule pédagogique de mise en situation :   
+Un réseau de neurones pré-entrainé permettra de détecter les poses et mouvements des patients en séances, si le robot connait ces mouvements il analysera s'ils sont bien exécutés. S'ils ne le sont pas il montrera comment les effectuer bien. 
 Une base de données sera donc nécessaire. 
 On peut imaginer commencer à 3 mouvements du haut du corps (bras et tête). Il faudra donc trouver les exercices faisables par Reachy. 
 
