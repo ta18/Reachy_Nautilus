@@ -49,12 +49,12 @@ documentation :
 Ici nous aimerions profiter du coter très émotionnel de Reachy qui provient surement du mouvement de la tête et des antennes.
 En nous inspirant de ces projets, je propose de créer une capsule pédagogique de mise en situation : 
 Un jeu mémoriel à l'intention des enfants avec autisme qui leur permettrait de mémoriser un certain nombre d'émotions. 
-Déroulement du jeu mémoriel : 
+Déroulement du jeu mémoriel :   
 1. Le robot produit des émotions par des expressions faciales et corporelles (posture/geste) et des expressions vocales. On peut commencer par 3/4 émotions. 
 2. L'enfant doit retenir les émotions et le nom de l'émotion annoncée. 
 3. Le robot va refaire les émotions dans un ordre aléatoire et l'enfant devra les reconnaitre. 
 
-Partie optionnelle a étudié : 
+Partie optionnelle a étudié :   
 L'apprentissage du robot de nouvelles émotions qu'il ne connait pas déjà. 
 
 ## 3. Capsule Reachy kiné 
@@ -65,7 +65,7 @@ Bien que les sujets avaient beaucoup d’appréhension à l’idée de travaille
 
 [projet KERAAL](https://imtech.wp.imt.fr/2018/01/24/robot-reeducation/)   
 
-En nous inspirant de ce projets, je propose de créer une capsule pédagogique de mise en situation qui traitera des sujets suivants : 
+En nous inspirant de ce projets, je propose de créer une capsule pédagogique de mise en situation :   
 Un réseaux de neurones pré-entrainé permettra de détecter les poses et mouvements des patients en séances, si le robot connait ces mouvements il analysera s'ils sont bien executés. S'ils ne le sont pas il montrera comment les effectuer bien. 
 Une base de données sera donc nécessaire. 
 On peut imaginer commencer à 3 mouvements du haut du corps (bras et tête). Il faudra donc trouver les exercices faisables par Reachy. 
