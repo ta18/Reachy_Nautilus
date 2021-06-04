@@ -25,7 +25,7 @@ Cette thématique "main" pourrait faire partie du projet : la capsule pourrait c
 
 ## 2. Capsule Reachy expressif (jeu mémoriel)
 
-### 2.1 Projet existant 
+### 2.1 Projets existants 
 
 Les personnes atteintes d’autisme voient, entendent et perçoivent le monde de façon différente des autres, ce qui influence la manière dont ils interagissent avec eux. Cela rend les activités axées sur la communication assez difficiles pour les enfants atteints de troubles du spectre autistique (TSA). 
 
@@ -59,12 +59,14 @@ L'apprentissage du robot de nouvelles émotions qu'il ne connait pas déjà.
 
 ## 3. Capsule Reachy kiné 
 
+### 3.1 Projet existant 
 Le projet KERAAL, porté par IMT Atlantique, travaille à la conception d’un robot humanoïde capable d’accompagner les patients atteints de lombalgie lors des exercices de rééducation à domicile. Grâce à des algorithmes d’apprentissage supervisé, le robot peut montrer au patient le bon mouvement à effectuer et corriger ses erreurs en temps réel.
 En 2014, les chercheurs avaient commencé des tests avec le robot Nao, développé par SoftBank Robotics. Aujourd'hui l'expérience est faite avec Poppy le petit frère de Reachy. 
 Bien que les sujets aient beaucoup d’appréhension à l’idée de travailler avec un robot, Poppy a été perçu de manière très positive. Le robot a également motivé les patients à effectuer leurs exercices. 
 
 Documentation : [projet KERAAL](https://imtech.wp.imt.fr/2018/01/24/robot-reeducation/)   
 
+### 3.2 Proposition de capsule 
 En nous inspirant de ce projet, je propose de créer une capsule pédagogique de mise en situation :   
 Un réseau de neurones pré-entrainé permettra de détecter les poses et mouvements des patients en séances, si le robot connait ces mouvements il analysera s'ils sont bien exécutés. S'ils ne le sont pas il montrera comment les effectuer bien. 
 Une base de données sera donc nécessaire. 
