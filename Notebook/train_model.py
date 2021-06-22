@@ -21,9 +21,9 @@ Here are the steps:
     This downloads 10 categories, 20 images for each category, saving it into
     a directory named `open_image_v4_subset`.
   2) Start training the new classification model:
-      python3 imprinting_learning.py \
-      --model_path models/mobilenet_v1_1.0_224_l2norm_quant_edgetpu.tflite \
-      --data open_image_v4_subset \
+      python3 train_model.py \
+      --model_path /home/reachy/Reachy_Nautilus/Notebook/Classification/models/ssd_mobilenet_v1_coco_quant_postprocess_edgetpu.tflite \
+      --data /home/reachy/Reachy_Nautilus/Notebook/Classification/annotation \
       --output my_model.tflite
   3) Run an inference with the new model:
       python3 classify_image.py \
@@ -33,6 +33,8 @@ Here are the steps:
 For more information, see
 https://coral.ai/docs/edgetpu/retrain-classification-ondevice/
 """
+import sys
+sys.path.append('/home/reachy/Reachy_Nautilus/Notebook/Classification')
 
 import argparse
 import os
