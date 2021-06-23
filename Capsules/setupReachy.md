@@ -29,7 +29,7 @@ Plus d'informations sur le robot et sa mise en route avec ces liens :
 3. Appuie sur le bouton poussoir a gauche pour mettre sous tension le NUC et sur le bouton ON/OFF à droite pour mettre sous tension les moteurs.
 4. Allumer l'écran du Reachy
 
-![Dos du robot](img/back.png)
+![Dos du robot](img/back2021.png)
 
 ## 2. Connexion au robot
 
