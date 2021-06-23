@@ -67,6 +67,6 @@ s'il n'y a pas d'erreur c'est que tu es bien connecté au du robot.
 Et voilà tu es connecté au robot Reachy, bravo ! 🎉
 
 **Trouver l'adresse IP**  
-🤖 Pour trouver l'adresse IP de reachy tu peux taper la commande suivante sur un terminal du robot : `ifconfig`
-![ip](img/ip.png)
+🤖 Pour trouver l'adresse IP de reachy tu peux taper la commande suivante sur un terminal du robot : `ifconfig`  
+![ip](img/ip.png)  
 l'adresse IP est encadré en vert sur l'image ci-dessus. 
