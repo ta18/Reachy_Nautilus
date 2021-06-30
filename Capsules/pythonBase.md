@@ -51,7 +51,7 @@ Pour afficher le contenu d'une variable il suffit d'entrer le nom de la variable
 
 Si tu souhaites redéfinir cette variable il suffit de réécrire :   
 ```python 
-prenom = "dory"
+prenom = "nemo"
 ```
 
 **Les différentes nature de variables :** 
@@ -78,8 +78,10 @@ Exemple :
 >>> c
 5 
 ```
-## 3. Les boucles if 
+## 3. Les boucles 
+Les boucles s’utilisent pour répéter plusieurs fois l’éxecution d’une partie du programme.
 
+### 3.1 Boucle if 
 Les conditions ont le même sens en informatique que dans le langage courant, elles permettent d'effectuer une action dans un cas précis. Si (événement), dans ce cas (action). 
 
 Les différentes condtions possibles sont : 
@@ -98,6 +100,46 @@ print("Le nombre est égal à zéro")
 else:
 print("Le nombre est positif")
 ```
+### 3.2 Boucle for et while
+
+**Boucle bornée**
+Quand on sait combien de fois doit avoir lieu la répétition, on utilise généralement une boucle `for`.
+
+Exemple :
+```python 
+>>>for i in [0, 1, 2, 3]:
+    print("i a pour valeur", i)
+0
+1
+2
+3
+```
+
+**Boucle non bornée**
+Si on ne connait pas à l’avance le nombre de répétitions, on choisit une boucle `while`.
+
+Exemple : 
+```python
+>>> x = 1
+>>> while x < 10:
+    print(x)
+    x = x * 2
+>>> print("Fin")
+1
+2
+4
+8
+Fin
+```
+## Les input 
+
+La plupart des scripts élaborés nécessitent à un moment ou l'autre une intervention de l'utilisateur (entrée d'un paramètre, clic de souris sur un bouton, etc.). La méthode la plus simple consiste à employer la fonction intégrée input(). Cette fonction provoque une interruption dans le programme courant. L'utilisateur est invité à entrer des caractères au clavier et à terminer avec <Enter>. Lorsque cette touche est enfoncée, l'exécution du programme se poursuit, et la fonction fournit en retour une valeur correspondant à ce que l'utilisateur a entré. Cette valeur peut alors être assignée à une variable quelconque.
+
+```python 
+>>> prenom = input('Entrez votre prénom (entre guillemets) : ')
+>>> print 'Bonjour,', prenom
+```
+
 ## 4. Les listes et tupples
 
 ### Liste
