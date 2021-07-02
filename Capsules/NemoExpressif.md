@@ -33,7 +33,7 @@ Les informations de cette capsule sont tirées des liens suivants :
 
 ### Définition de l'autisme ❓
 
-![autisme](img/autisme.png)
+![autisme](img/autism.png)
 
 Les caractéristiques de l’autisme sont très variées d’un individu à l’autre. C’est pourquoi on parle de troubles du spectre autistique (TSA) : chaque personne se situe à un degré différent dans ce spectre.
 
@@ -72,28 +72,34 @@ documentation :
 
 ## Activités 👩‍💻
 
-Tu est ingénieur dans une équipe de recherche sur les maladies neurodéveloppementale qui concoit des serious game afin d'améliorer la vie ...
+Tu est ingénieur dans une équipe de recherche sur les maladies neurodéveloppementale qui concoit des serious game afin d'améliorer le quotidien des personnes en situation de handicap.
 Ici vous aimeriez profiter du côté très émotionnel de Reachy qui provient principalement du mouvement de la tête et des antennes.  
-Nous avez décider de créer un jeu mémoriel à l'intention des enfants avec autisme qui leur permettrait de mémoriser un certain nombre d'émotions afin de pouvoir détecter les émotions d'autrui et pemettre des interactions sociales plus adaptées.   
+Vous avez décider de créer un jeu mémoriel à l'intention des enfants avec autisme qui leur permettrait à terme de mémoriser un certain nombre d'émotions afin de pouvoir détecter les émotions d'autrui et permettre des interactions sociales plus adaptées.
 
 ### Déroulement du jeu mémoriel :   
-1. Le robot produit des émotions par des expressions faciales et corporelles (posture et geste) et des expressions vocales.   
+1. Le robot produit des émotions par des expressions faciales et corporelles (posture et geste) et des expressions vocales. Il annonce via ses hauts parleurs l'émotion qu'il va faire.   
 2. L'enfant doit retenir les émotions et le nom de l'émotion annoncée (on peut aussi associer l'émotion à une couleur mais il faut vérifier si ca ne biaise pas l'apprentissage + comment annoncer l'émotions ?). 
-3. Le robot va refaire les émotions dans un ordre aléatoire et l'enfant devra les reconnaitre. 
+3. Le robot va refaire les émotions dans un ordre aléatoire et l'enfant devra les reconnaitre et restituer la séquences dans l'ordre. 
 
-Tu dois fournir des séquences de 5 émotions. Les émotions que le robot doit faire sont : 
-* la peur
-* la tristesse
-* la colère 
-* la joie 
-* la surprise.
+Tu dois fournir des séquences de 5 émotions. Voici les émotions que le robot doit faire et leurs principales caractéristiques : 
+* La peur : mouvements courts, rapides, compulsifs, abrupts et maladroits / difficultés à rester immobile / croissement des bras / poings fermés ou mains cachées / tortillement 
+* La tristesse : tête penchée vers l'avant / tête sur le coté droit / corps mou / corps recroquevillé / mouvements lents
+* La colère : bras et mains raides / gestes rapides, lourds et brusques / voix forte / muscles contractés
+* La joie : corps détendu / geste fluide / mouvements amples et grandissants / exclamations
+* La surprise : main à la bouche / yeux écarquillés et sourcils haussées / exclamations
+Tu peux t'inspirer de ta perception des émotions pour créer ces émotions sur Reachy. 
 
-### Consigne 
-Tu dois créer les émotions sur Reachy en lui faisant bouger les bras et la tête et en le faisant faire du bruit. Le nom de l'émotion doit être énoncé a la personne qui est entrain d'apprendre.   
-Tu dois une partie de code qui permet de lancer des séquences de 5 émotions faites dans un ordre aléatoire.   
-Tu dois créer une partie de code où la personne qui apprendre pourra rentrer la séquences d'émotions qu'il a vu afin de valider la justesse de son apprentissage.   
-Tu dois créer une partie de code qui permettra au robot d'apprendre de nouvelles émotions qu'il ne connait pas déjà (avec movement recorder).   
+### Consignes 
+Créer les émotions sur Reachy en lui faisant bouger les bras et la tête et en utilisant les hauts parleurs pour produire des sons. Le nom de l'émotion doit être énoncé à la personne qui est entrain d'apprendre.   
+Créer une partie de code qui permet de lancer des séquences de 5 émotions faites dans un ordre aléatoire.   
+Créer une partie de code où la personne qui apprendre pourra rentrer la séquences d'émotions qu'il a vu afin de valider la justesse de son apprentissage.   
+Créer une partie de code qui permettra au robot d'apprendre de nouvelles émotions qu'il ne connait pas déjà (avec trajectory recorder).   
 
+**Recommandations :** 
+- Utiliser la création de classe pour créer la classe Emotion.
+- Utiliser le trajectoire recorder pour enregistrer les trajectoires. 
+- Utiliser les input pour permettre a l'apprennant de restituer la séquence jouée. 
+- Utiliser le haut parleur de Nemo avec la librairie [pygame](https://devdocs.io/pygame-pygame-mixer-music/) pour jouer des sons sur Reachy. 
 
 Partie avancée :   
-Reconnaissance des émotions des enfants
+Reconnaissance des émotions des enfants avec détection de visage et corps. 
