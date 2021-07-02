@@ -76,17 +76,17 @@ Pour pouvoir jouer au morpion avec Reachy il te faudra tout d'abord construire u
 Pour cela il te faut une planche de 45 x 65 en bois, liège, carton plume ... etc. 
 
 1. Sur ta planche, il te faut placer le chaterton comme cela afin de créer ta grille :
-![playground dimension](img/dimension_play.png)
+![playground dimension](img/playground_grid.png)
 
 2. Place la planche à 175 mm du pied du Reachy. Je te conseille de bien fixer la planche afin que le robot de la déplace pas en jouant. 
-![placement planche](img/dimension_play.png)
+![placement planche](img/dimension_distance.png)
 
 3. Il te faut fabriquer ou acheter des cubes de 51 x 51mm et des cylindre de 50mm de diametre par 50mm de hauteur. Tu peux trouver ici des STL pour l'impression 3D de ces pièces :  
 [Lien STL cylindre](https://www.notion.so/TicTacToe-Guide-26937009c5dc4a7f950ede22c918d85a)
 [Lien STL cube](https://www.notion.so/TicTacToe-Guide-26937009c5dc4a7f950ede22c918d85a)
 Il te faudra 5 pièces de chaque. 
 
-![playground final](img/dimension_play.png)
+![dimension cylinder](img/dim_cylinder.png) ![dimension cube](img/dim_cube.png)
 
 
 ### Première mise en route : 
@@ -109,7 +109,7 @@ Les commandes à connaitre :
 La démo se déroule de manière totalement autonome : 
 Tout d'abord, le robot ne commencera une partie qu'une fois le plateau terminé. C'est à vous de réinitialiser la position de l'échiquier et de remettre le pion à sa position de base.
 Position de base : 
-![playground base](img/dimension_play.png)
+![playground base](img/playground_base.png)
 
 Lorsqu'une partie est terminée, une nouvelle est directement redémarrée. Ainsi, à la fin d'une partie, nettoyez le plateau et une nouvelle partie commencera.
 
@@ -119,5 +119,16 @@ Lorsque le plateau est prêt, le jeu commence. Reachy va désigner celui qui com
 Une fois que tu as jouer Reachy va analyser le plateau en baissant la tête, il lui faut un peu de temps pour tout détecter, mais une fois que cela est bon il prendra tout seul sa pièce et jouera à son tour. 
 ET ainsi de suite jusqu'a ce que quelqu'un gagne. 
 
+### Mise en place de la grille 
+
+Afin d'adapter la détection de la grille et des cylindres et cubes, tu vas devoir rentrer les dimensions exactes de ta grille. 
+Ouvre le jupyter notebook *Check_boxes* qui va te permettre de visualiser la grille et les différentes boxes de la grille à travers les yeux de Reachy. 
+```
+cd ~/dev/reachy-tictactoe/notebooks
+jupyter notebook 
+```
+Suivre les indications sur le notebook. 
+
+## Ré-entrainer un model 
 
 
