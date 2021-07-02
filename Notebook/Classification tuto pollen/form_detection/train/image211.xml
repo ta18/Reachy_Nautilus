@@ -1,0 +1,26 @@
+<annotation>
+	<folder>cylinder</folder>
+	<filename>image21.png</filename>
+	<path>/home/reachy/Reachy_Nautilus/Notebook/Classification/annotation/cylinder/image21.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>224</width>
+		<height>224</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>cylinder</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>36</xmin>
+			<ymin>19</ymin>
+			<xmax>194</xmax>
+			<ymax>168</ymax>
+		</bndbox>
+	</object>
+</annotation>
