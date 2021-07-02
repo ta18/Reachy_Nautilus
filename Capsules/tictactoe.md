@@ -15,7 +15,7 @@ A l'issue de cette activité, l'apprenant saura :
 
 ## 📗 Documentation
 
-Les informations de cette capsule sont tirées des liens suivants :
+Les informations de cette capsule sont tirées des liens suivants :   
 [Le jeu du Tic-tac-toe](https://fr.wikipedia.org/wiki/Tic-tac-toe)   
 [Playground configuration](https://www.notion.so/TicTacToe-Guide-26937009c5dc4a7f950ede22c918d85a)  
 [Documentation Reachy 2019](https://pollen-robotics.github.io/reachy-2019-docs/)  
@@ -79,7 +79,7 @@ Pour cela il te faut une planche de 45 x 65 en bois, liège, carton plume ... et
 ![playground dimension](img/playground_grid.png)
 
 2. Place la planche à 175 mm du pied du Reachy. Je te conseille de bien fixer la planche afin que le robot de la déplace pas en jouant. 
-![placement planche](img/dimension_distance.png)
+![placement planche](img/playground_distance.png)
 
 3. Il te faut fabriquer ou acheter des cubes de 51 x 51mm et des cylindre de 50mm de diametre par 50mm de hauteur. Tu peux trouver ici des STL pour l'impression 3D de ces pièces :  
 [Lien STL cylindre](https://www.notion.so/TicTacToe-Guide-26937009c5dc4a7f950ede22c918d85a)
