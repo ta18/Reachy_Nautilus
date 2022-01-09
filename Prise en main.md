@@ -1,6 +1,6 @@
 # Prise en main du robot Reachy 
 
-⚠️ **ATTENTION : cette documentation a était faite pour Reachy 2019** ⚠️ 
+⚠️ **ATTENTION : cette documentation a été faite pour Reachy 2019** ⚠️ 
 
 Reachy est une plate-forme humanoïde open-source expressive programmable avec Python. Avec Reachy vous pourrez concevoir de multiple application autant dans la reconnaissance d'images que dans la manipulation d'objets. 
 
